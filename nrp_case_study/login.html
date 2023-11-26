@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="container">
+        <label class='x' onclick="handleHomeNavigate()">X</label>
+        <form>
+            
+            <div style="margin-top: 20px;">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+            </div>
+
+            <div style="margin-top: 15px;">
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+            </div>
+
+            <div style="margin-top: 15px; text-align: center;gap: 10px;">
+                <button type="submit">Login</button>
+                <a href="forgot">forgot password</a>
+                <!-- <button type="button" onclick="handleHomeNavigate()">Cancel</button> -->
+            </div>
+
+            <div style="margin-top: 15px;margin-bottom: 20px; text-align: center;">
+                
+            </div>
+
+            <div style="margin-top: 15px;margin-bottom: 20px;text-align: center;">
+                New User <a href="registration.html">Register</a>
+            </div>
+        </form>
+    </div>
+    <script>
+        function handleHomeNavigate() {
+            location.replace("home.html")
+        }
+    </script>
+</body>
+
+</html>

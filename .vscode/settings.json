@@ -1,0 +1,22 @@
+{
+    "dataworkspace.excludedProjects": [
+        "nrp_ilp_sql/nrp_ilp_sql.sqlproj"
+    ],
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "127.0.0.1",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "NRP",
+            "username": "admin",
+            "database": "NRP",
+            "password": "admin"
+        }
+    ],
+    "liveServer.settings.port": 5501
+}

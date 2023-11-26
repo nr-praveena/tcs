@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: darkgrey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(14, 13, 13, 0.1);
+        }
+
+        form {
+            width: 700px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        button {
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 13vh;
+            height: 4vh;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+            text-align: center;
+            color: antiquewhite;
+            background-color: rgb(10, 231, 235);
+        }
+
+        h3 {
+            color: rgb(10, 231, 235);
+            margin-bottom: 5px;
+        }
+
+        span {
+            margin-left: 85px;
+        }
+
+        input,select {
+            width: 25vh;
+            height: 18px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <form class="form">
+
+            <h1>Register New user</h1>
+
+            <h3>Consumer Details</h3>
+            <hr>
+
+            <div style="margin-bottom: 30px;">
+                <label style="margin-left: 30px;" for="ConsumerId">Consumer No:</label>
+                <input type="number" pattern="[0-9]{13}" required>
+
+                <lable style="margin-left: 75px;" for="BillNo">Bill No:</lable>
+                <input type="number" pattern="[0-9]{5}" required>
+            </div>
+
+            <h3>User Details</h3>
+            <hr>
+            <div style="margin-bottom: 30px;">
+
+                <label style="margin-left: 30px;" for="title">Title:</label>
+                <select style="margin-left: 27px; height: 23px; width: 188px;" id="title" name="title">
+                    <option value="mr">Mr</option>
+                    <option value="mrs">Mrs</option>
+                    <option value="miss">Miss</option>
+                </select>
+
+                <label style="margin-left: 45px;" for="customerName">Customer Name:</label>
+                <input type="text" id="customerName" name="customerName" maxlength="50" required> 
+
+                <div style="margin-top: 10px;">
+                    <label style="margin-left: 30px;" for="email">Email:</label>
+                    <input style="margin-left: 15px" type="email" id="email" name="email"
+                        required>
+
+
+                    <label style="margin-left: 52px;" for="mobileNumber">Mobile Number:</label>
+                    <select style="height: 23px; width: 188px;" id="mobileCode" name="mobileCode">
+                        <option value="+91">+91 (INDIA)</option>
+                    </select>
+
+
+                    <div style="text-align: right; margin-right: 53px; margin-top: 5px;">
+                        <input type="text" id="mobileNumber" name="mobileNumber" pattern="[0-9]{10}" required>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Login Details</h3>
+            <hr>
+
+            <div>
+                <div>
+                    <label style="margin-left: 30px;" for="userId">User ID:</label>
+                    <input type="text" id="userId" name="userId" minlength="5" maxlength="15" required>
+
+                    <label style="margin-left: 90px;" for="password">Password:</label>
+                    <input type="password" id="password" name="password" maxlength="12" required>
+                </div>
+
+                <div style="text-align: right; margin-right: 53px; margin-top: 10px;">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" maxlength="12" required>
+                </div>
+
+                <div style="text-align: center;margin-top: 25px; ">
+                    <button type="reset" style="background-color:grey;">Reset</button>
+                    <button type="button" style="background-color:rgb(10, 231, 235);">Register</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
